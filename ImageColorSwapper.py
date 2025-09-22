@@ -61,7 +61,7 @@ if uploaded_file:
     img = Image.open(uploaded_file)
 else:
     try:
-        url = "https://raw.githubusercontent.com/Jakub-Laska/image-dark-mode-converter/refs/heads/main/colorSwapperPlaceholder.png"
+        url = "https://raw.githubusercontent.com/Jakub-Laska/Image-color-swapper/refs/heads/main/colorSwapperPlaceholder.png"
         response = requests.get(url)
         img = Image.open(BytesIO(response.content))
     except Exception:
